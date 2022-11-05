@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu {
+  background-color: #eee;
+}
+
+h2 {
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+}
+
+.contaner {
+  position: relative;
+  padding: 15px;
+  width: 100%;
+}
+
+.foods {
+  float: left;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  width: calc((100% - 60px) / 3);
+  position: relative;
+  background-color: #4db0ff7a;
+  border: solid 2px black;
+  overflow: hidden;
+}
+
+.clear {
+  clear: both;
+}
+
+.food-name {
+  width: 100%;
+  display: inline-block;
+}
+
+.food-name h3 {
+  width: 150px;
+  text-align: center;
+  float: right;
+  padding: 5px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  background-color: #df7a9c9e;
+}
+
+.foods p {
+  padding: 15px;
+}
+h3.beef {
+  background-color: #ff5722e6;
+}
+
+h3.sushi {
+  background-color: #fff422e3;
+}
+
+@media (min-width: 992px) {
+  .foods {
+    width: calc((100% - 60px) / 3);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .foods {
+    width: calc((100% - 45px) / 2);
+  }
+  .foods:nth-child(3) {
+    width: calc(100% - 30px);
+  }
+}
+
+@media (max-width: 767px) {
+  .foods {
+    width: calc(100% - 30px);
+  }
+  .food-name h3 {
+    width: 120px;
+  }
+}
